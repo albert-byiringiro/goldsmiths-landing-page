@@ -2,15 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <!-- article pages -->
-    <!-- font-family Graphik Web, Arial, Sans-serif -->
-    <div class="container">
+    <div class="site-wrapper relative overflow-hidden w-full min-w-80 m-0">
       <div class="grid gap-4 pt-12 pb-12 px-8 bg-gray-200">
         <article class="grid bg-white shadow-sm relative rounded-sm">
           <h3 class="text-lg text-gray-900 text-center font-medium py-4">
@@ -36,7 +33,7 @@
           </span>
         </article>
 
-        <article class="">
+        <article class="sm:col-span-6 sm:order-first">
           <div class="bg-red-600">
             <img src="/img/Students-outside-the-CCA_19427-(1).jpg" alt="" />
           </div>
@@ -63,7 +60,9 @@
           </div>
         </article>
 
-        <article class="grid bg-white shadow-sm relative rounded-sm">
+        <article
+          class="grid bg-white shadow-sm relative rounded-sm sm:order-3 sm:col-span-3"
+        >
           <h3 class="text-lg text-gray-900 text-center font-medium py-4">
             Goldsmiths, University of London
           </h3>
@@ -87,9 +86,13 @@
           </span>
         </article>
 
-        <article class="">
-          <div class="bg-red-600">
-            <img src="/img/Scholarship_homepage.jpg" alt="" />
+        <article class="sm:order-4 sm:col-span-6">
+          <div class="">
+            <img
+              class="w-full h-full object-contain"
+              src="/img/Scholarship_homepage.jpg"
+              alt=""
+            />
           </div>
           <div class="grid bg-white shadow-sm rounded-sm relative -top-3 mx-4">
             <h3 class="text-lg text-gray-900 text-center font-medium py-4">
@@ -114,15 +117,108 @@
           </div>
         </article>
 
-        <div>
-          <article class="">
-            <article class="h-60 w-full bg-blue-500"></article>
-          </article>
+        <div class="page-search h-60 w-full mt-8 sm:order-5">
+          <div class="search-area">
+            <div class="page-search-container flex">
+              <div
+                class="search-icon bg-no-repeat min-w-11 max-w-12 mr-8 hidden sm:block"
+              >
+                <img class="block w-11" src="/img/icon-search.svg" alt="" />
+              </div>
+              <div class="search-components flex-grow">
+                <h2 class="font-semibold mt-0 text-base">Search:</h2>
+                <form action="" class="py-2">
+                  <div
+                    class="search-radios flex gap-4 text-gray-900 py-3 font-semibold"
+                  >
+                    <div class="gold-radios__item flex space-x-2">
+                      <input
+                        type="radio"
+                        class="gold-radios__input"
+                        id="edit-0"
+                        name="hp-search"
+                      />
+                      <label for="edit-0" class="text-[#333] text-base mt-0"
+                        >Degrees</label
+                      >
+                    </div>
+                    <div class="gold-radios__item flex space-x-2">
+                      <input
+                        type="radio"
+                        class="gold-radios__input"
+                        id="edit-0"
+                        name="hp-search"
+                      />
+                      <label for="edit-0" class="text-[#333] text-base mt-0"
+                        >Website</label
+                      >
+                    </div>
+                  </div>
+                  <div class="page-search-box-cta flex items-center gap-2">
+                    <div class="page-search-box w-full">
+                      <input
+                        type="text"
+                        name="query"
+                        autocomplete="off"
+                        aria-label="Search courses"
+                        class="w-full border-2 border-[#333] h-14 text-base"
+                      />
+                    </div>
+                    <input
+                      type="submit"
+                      class="button hidden text-sm px-8 py-4 border-b-4 divide-solid border-[#666] bg-[#fed100] text-[#333]"
+                      value="Search"
+                    />
+                    <input
+                      type="submit"
+                      class="button button-mobile sm:hidden text-sm px-8 py-4 border-b-4 divide-solid border-[#666] bg-[#fed100] text-[#333]"
+                      value="Go"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <article class="">
-          <div class="bg-red-600">
-            <img src="/img/VRLatham.jpg" alt="" />
+        <article class="sm:order-6">
+          <div class="">
+            <img
+              class="w-full h-full object-contain"
+              src="/img/VRLatham.jpg"
+              alt=""
+            />
+          </div>
+          <div class="grid bg-white shadow-sm rounded-sm relative -top-3 mx-4">
+            <h3 class="text-lg text-gray-900 text-center font-medium py-4">
+              Research which changes the world
+            </h3>
+            <div class="content px-8 mb-8">
+              <p class="text-base indent-2 text-gray-600">
+                Find out more about life on our campus, including accommodation
+                information and local area hints and tips.
+              </p>
+            </div>
+            <span
+              class="relative mx-8 my-4 py-3 text-left text-sm text-blue-600 font-semibold border-t-2 border-gray-200"
+            >
+              About Goldsmiths
+              <img
+                class="-mr-6 absolute right-8 left-auto top-4 h-2 w-6 ml-2"
+                src="/img/icon-more-666-forward.svg"
+                alt=""
+              />
+            </span>
+          </div>
+        </article>
+
+        <article class="sm:order-7">
+          <div class="">
+            <img
+              class="w-full h-full object-contain"
+              src="/img/Annie-Mac-edit.jpg"
+              alt=""
+            />
           </div>
           <div class="grid bg-white shadow-sm rounded-sm relative -top-3 mx-4">
             <h3 class="text-lg text-gray-900 text-center font-medium py-4">
@@ -147,9 +243,13 @@
           </div>
         </article>
 
-        <article class="">
-          <div class="bg-red-600">
-            <img src="/img/Annie-Mac-edit.jpg" alt="" />
+        <article class="sm:order-8">
+          <div class="">
+            <img
+              class="w-full h-full object-contain"
+              src="/img/Daniel-and-John-edit.jpg"
+              alt=""
+            />
           </div>
           <div class="grid bg-white shadow-sm rounded-sm relative -top-3 mx-4">
             <h3 class="text-lg text-gray-900 text-center font-medium py-4">
@@ -174,9 +274,13 @@
           </div>
         </article>
 
-        <article class="">
-          <div class="bg-red-600">
-            <img src="/img/Daniel-and-John-edit.jpg" alt="" />
+        <article class="sm:order-9">
+          <div class="">
+            <img
+              class="w-full h-full object-contain"
+              src="/img/matt-connors-960.jpg"
+              alt=""
+            />
           </div>
           <div class="grid bg-white shadow-sm rounded-sm relative -top-3 mx-4">
             <h3 class="text-lg text-gray-900 text-center font-medium py-4">
@@ -201,9 +305,13 @@
           </div>
         </article>
 
-        <article class="">
-          <div class="bg-red-600">
-            <img src="/img/matt-connors-960.jpg" alt="" />
+        <article class="sm:order-10">
+          <div class="">
+            <img
+              class="w-full h-full object-contain"
+              src="/img/Untitled-1_0001_DSC07057.jpg"
+              alt=""
+            />
           </div>
           <div class="grid bg-white shadow-sm rounded-sm relative -top-3 mx-4">
             <h3 class="text-lg text-gray-900 text-center font-medium py-4">
@@ -228,36 +336,13 @@
           </div>
         </article>
 
-        <article class="">
-          <div class="bg-red-600">
-            <img src="/img/Untitled-1_0001_DSC07057.jpg" alt="" />
-          </div>
-          <div class="grid bg-white shadow-sm rounded-sm relative -top-3 mx-4">
-            <h3 class="text-lg text-gray-900 text-center font-medium py-4">
-              Live like a local
-            </h3>
-            <div class="content px-8 mb-8">
-              <p class="text-base indent-2 text-gray-600">
-                Find out more about life on our campus, including accommodation
-                information and local area hints and tips.
-              </p>
-            </div>
-            <span
-              class="relative mx-8 my-4 py-3 text-left text-sm text-blue-600 font-semibold border-t-2 border-gray-200"
-            >
-              About Goldsmiths
-              <img
-                class="-mr-6 absolute right-8 left-auto top-4 h-2 w-6 ml-2"
-                src="/img/icon-more-666-forward.svg"
-                alt=""
-              />
-            </span>
-          </div>
-        </article>
-
-        <article class="">
-          <div class="bg-red-600">
-            <img src="/img/Class-of-2016_-Graduation-2016_10686-s.jpg" alt="" />
+        <article class="sm:order-11">
+          <div class="">
+            <img
+              class="w-full h-full object-contain"
+              src="/img/Class-of-2016_-Graduation-2016_10686-s.jpg"
+              alt=""
+            />
           </div>
           <div class="grid bg-white shadow-sm rounded-sm relative -top-3 mx-4">
             <h3 class="text-lg text-gray-900 text-center font-medium py-4">
